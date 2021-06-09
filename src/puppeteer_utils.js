@@ -230,7 +230,7 @@ const crawl = async opt => {
           options,
           route,
           onError: () => {
-            if (!options?.ignorePageErrors) shuttingDown = true;
+            if (!options.ignorePageErrors) shuttingDown = true;
           },
           sourcemapStore
         });
